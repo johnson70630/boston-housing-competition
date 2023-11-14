@@ -53,4 +53,14 @@ This data frame contains the following columns:
 - no 'medv' in testing data
 
 ## one-hot encoding
-- 
+Transform 'chas' into 'chas_0' and 'chas_1', and under each new feature, use 0 and 1 to represent the presence or absence of the category
+
+## standardization
+
+## bagging
+
+
+## Training
+### [Linear Regression](https://github.com/johnson70630/boston-housing-competition/blob/main/boston_housing_competition/boston_housing_competition.py)
+
+### [Random Forest](https://github.com/johnson70630/boston-housing-competition/blob/main/boston_housing_competition/boston_random_forest.py)
