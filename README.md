@@ -56,11 +56,22 @@ This data frame contains the following columns:
 Transform 'chas' into 'chas_0' and 'chas_1', and under each new feature, use 0 and 1 to represent the presence or absence of the category
 
 ## standardization
+Using the mean and standard deviation to standardize the data, making the numerical values of each data item fall within the range of 0 to 1
 
 ## bagging
-
+From the training dataset, extract K samples, then train K classifiers (trees in this case) using these K samples. Each time, the K samples are put back into the population, so there is some data overlap among these K samples. However, because the samples for each tree are still different, the trained classifiers (trees) have diversity. The final result is obtained by majority vote, where each classifier has equal weight
 
 ## Training
 ### [Linear Regression](https://github.com/johnson70630/boston-housing-competition/blob/main/boston_housing_competition/boston_housing_competition.py)
 
 ### [Random Forest](https://github.com/johnson70630/boston-housing-competition/blob/main/boston_housing_competition/boston_random_forest.py)
+
+1. Define a random sample of size n (here, using the bagging method), which involves randomly selecting n data points from the dataset with replacement
+
+2. From the selected n data points, train a decision tree. For each node:
+  - Randomly select d features
+  - Use these features to split the node (based on information gain
+3. Repeat steps 1 to 2 k times
+
+4. Aggregate the predictions of all decision trees and determine the classification result by majority vote
+
