@@ -64,6 +64,8 @@ From the training dataset, extract K samples, then train K classifiers (trees in
 ## Training
 ### [Linear Regression](https://github.com/johnson70630/boston-housing-competition/blob/main/boston_housing_competition/boston_housing_competition.py)
 
+Linear regression is a regression analysis method that models the relationship between one or more independent variables and a dependent variable using the least squares function, known as the linear regression equation.
+
 ### [Random Forest](https://github.com/johnson70630/boston-housing-competition/blob/main/boston_housing_competition/boston_random_forest.py)
 
 1. Define a random sample of size n (here, using the bagging method), which involves randomly selecting n data points from the dataset with replacement
