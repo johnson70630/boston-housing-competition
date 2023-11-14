@@ -63,8 +63,8 @@ def data_preprocess(data, mode='Train'):
 
 
 def one_hot_encoding(data):
-        data = pd.get_dummies(data, columns=['chas'])
-        return data
+    data = pd.get_dummies(data, columns=['chas'])
+    return data
 
 
 def out_file(predictions, id, filename):
