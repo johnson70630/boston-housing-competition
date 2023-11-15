@@ -47,18 +47,18 @@ This data frame contains the following columns:
 - medv: median value of owner-occupied homes in \$1000s
 
 
-## data preprocessing
+## Data preprocessing
 - remove 'ID'
 - check for missing data
 - no 'medv' in testing data
 
-## one-hot encoding
+## One-hot encoding
 Transform 'chas' into 'chas_0' and 'chas_1', and under each new feature, use 0 and 1 to represent the presence or absence of the category
 
-## standardization
+## Standardization
 Using the mean and standard deviation to standardize the data, making the numerical values of each data item fall within the range of 0 to 1
 
-## bagging
+## Bagging
 From the training dataset, extract K samples, then train K classifiers (trees in this case) using these K samples. Each time, the K samples are put back into the population, so there is some data overlap among these K samples. However, because the samples for each tree are still different, the trained classifiers (trees) have diversity. The final result is obtained by majority vote, where each classifier has equal weight
 
 ## Training
